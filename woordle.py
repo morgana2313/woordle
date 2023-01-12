@@ -179,7 +179,7 @@ def testfilterStarMinus():
     print (f"{words} + {attempt} => {guess.wordlist}")
 #testfilterStarMinus();exit(0)
 
-random.seed(0)
+random.seed()
 lenWord = 6
 words = sorted(w.lower() for w in filter(lambda w: len(w)== lenWord, dutch_words.get_ranked()) )
 CorrectWord = words[random.randrange(len(words))]
